@@ -7,3 +7,4 @@ CREATE TABLE Orders (
     user_id INT NOT NULL,               
     FOREIGN KEY (user_id) REFERENCES Users(User_ID),  
     FOREIGN KEY (item_id) REFERENCES Food_Items(ID)   
+);
