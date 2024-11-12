@@ -1,0 +1,9 @@
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,             
+    item_id INT NOT NULL,              
+    quantity INT NOT NULL,                  
+    food_name VARCHAR(100) NOT NULL,    
+    total_price DECIMAL(10, 2) NOT NULL,   
+    user_id INT NOT NULL,               
+    FOREIGN KEY (user_id) REFERENCES Users(User_ID),  
+    FOREIGN KEY (item_id) REFERENCES Food_Items(ID)   
