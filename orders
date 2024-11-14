@@ -9,3 +9,10 @@ CREATE TABLE Orders (
     FOREIGN KEY (item_id) REFERENCES Food_Items(ID) ON DELETE CASCADE ON UPDATE CASCADE
    
 );
+
+
+INSERT INTO Orders (item_id, quantity, food_name, total_price, user_id)
+VALUES (1, 1, 'Biryani', 12.99, 2);
+INSERT INTO Orders (item_id, quantity, food_name, total_price, user_id)
+VALUES (4, 1, 'Pav Bhaji', 5.99, 2);
+
